@@ -23,6 +23,7 @@ export const ImagesSlider = ({
   const [currentIndex, setCurrentIndex] = useState(0)
   const [loading, setLoading] = useState(false)
   const [loadedImages, setLoadedImages] = useState<string[]>([])
+  console.log(children)
 
   const handleNext = () => {
     setCurrentIndex((prevIndex) =>
@@ -74,7 +75,7 @@ export const ImagesSlider = ({
     if (autoplay) {
       interval = setInterval(() => {
         handleNext()
-      }, 5000)
+      }, 3000)
     }
 
     return () => {
@@ -94,7 +95,7 @@ export const ImagesSlider = ({
       rotateX: 0,
       opacity: 1,
       transition: {
-        duration: 0.5,
+        duration: 1,
         ease: [0.645, 0.045, 0.355, 1.0],
       },
     },
