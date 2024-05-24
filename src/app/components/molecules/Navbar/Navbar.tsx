@@ -16,10 +16,10 @@ const Navbar = () => {
     setNav(!nav)
   }
   return (
-    <Container classNames={nav ? "fixed bg-black" : "fixed "}>
-      <nav className="bg-transparent py-8 text-xl flex justify-between w-full">
+    <Container classNames={nav ? "fixed bg-black z-50" : "fixed z-50"}>
+      <nav className="bg-transparent py-8 text-xl flex justify-between w-full uppercase">
         <div>
-          <h1 className="font-extrabold ">
+          <h1 className="font-extrabold text-sm tracking-wide md:text-xl ">
             Shree Bhotenamlang Secondary School
           </h1>
         </div>
@@ -38,13 +38,15 @@ const Navbar = () => {
         <ul
           className={
             nav
-              ? "fixed md:hidden left-0 top-[90px] px-8 flex flex-col gap-2 w-[60%] h-full border-r border-r-gray-900 bg-[#000300] ease-in-out duration-500"
-              : "ease-in-out w-[60%] duration-1000 fixed top-0 bottom-0 left-[-100%]"
+              ? "fixed md:hidden z-50 pt-10 left-0 top-[100px] sm:top-[90px] px-8 flex flex-col gap-2 w-[70%] h-full border-r border-r-gray-900 bg-[#000300] ease-in-out duration-1000"
+              : "ease-in-out w-[70%] duration-1000 fixed top-0 bottom-0 left-[-100%]"
           }
         >
           {NavItems.map((item, index) => (
             <li key={index} className="capitalize">
-              <Link href={`#${item}`}>{item}</Link>
+              <Link href={`#${item}`} onClick={handleNav}>
+                {item}
+              </Link>
             </li>
           ))}
         </ul>

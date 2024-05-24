@@ -3,8 +3,8 @@ import Container from "../../atoms/Container/Container"
 
 const Event = () => {
   return (
-    <Container classNames="relative text-black">
-      <header className="py-6 " id="events">
+    <Container classNames="relative text-black" id="events">
+      <header className="py-6 ">
         <h1 className="text-3xl font-bold ">
           Shree Bhotenamlang Secondary School
         </h1>
