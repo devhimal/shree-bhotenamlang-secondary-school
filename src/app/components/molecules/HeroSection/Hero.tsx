@@ -11,7 +11,7 @@ const Hero = () => {
     "/images/school4.jpg",
   ]
   return (
-    <ImagesSlider className="h-full" images={images}>
+    <ImagesSlider className="h-[100vh]" images={images}>
       <motion.div
         initial={{
           opacity: 0,

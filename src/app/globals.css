@@ -2,32 +2,43 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+/* SlantedContainer.css */
+.relative {
+  position: relative;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.overflow-hidden {
+  overflow: hidden;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.absolute {
+  position: absolute;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.bg-gradient-to-r {
+  background: linear-gradient(to right, #1f2937, rgba(31, 41, 55, 0));
+}
+
+.transform {
+  transform: skewX(-12deg);
+}
+
+.skew-x-12 {
+  transform: skewX(12deg);
+}
+
+.w-full {
+  width: 100%;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.p-8 {
+  padding: 2rem;
+}
+
+.z-10 {
+  z-index: 10;
 }

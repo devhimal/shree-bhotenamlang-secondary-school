@@ -3,6 +3,7 @@ import { cn } from "../utils/cn"
 import { motion, AnimatePresence } from "framer-motion"
 import React, { useEffect, useState } from "react"
 
+
 export const ImagesSlider = ({
   images,
   children,
@@ -23,7 +24,6 @@ export const ImagesSlider = ({
   const [currentIndex, setCurrentIndex] = useState(0)
   const [loading, setLoading] = useState(false)
   const [loadedImages, setLoadedImages] = useState<string[]>([])
-  console.log(children)
 
   const handleNext = () => {
     setCurrentIndex((prevIndex) =>
