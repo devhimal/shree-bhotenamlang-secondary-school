@@ -1,12 +1,17 @@
-import Image from "next/image"
+import Hero from "./components/molecules/HeroSection/Hero"
+import Navbar from "./components/molecules/Navbar/Navbar"
+import Event from "./components/molecules/Events/Event"
+import Numbers from "./components/molecules/Numbers/Numbers"
+import FeatureProgram from "./components/molecules/FeatureProgram/FeatureProgram"
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col justify-center items-center h-[70vh] gap-10">
-      <h2 className=" text-center text-2xl white uppercase">
-        Welcome, Shree bhotenamlang secondary school website
-      </h2>
-      <p className="">Coming Soon</p>
+    <main className="flex relative flex-col items-center h-fit gap-10">
+      <Navbar />
+      <Hero />
+      <Numbers />
+      <FeatureProgram />
+      <Event />
     </main>
   )
 }
