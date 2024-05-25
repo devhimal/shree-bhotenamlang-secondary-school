@@ -17,7 +17,7 @@ const Navbar = () => {
   }
   return (
     <Container classNames={nav ? "fixed bg-black z-50" : "fixed z-50"}>
-      <nav className="bg-transparent py-8 text-xl flex justify-between w-full uppercase">
+      <nav className="bg-transparent py-8 text-xl flex justify-between w-full capitalize">
         <div>
           <h1 className="font-extrabold text-sm tracking-wide md:text-xl ">
             Shree Bhotenamlang Secondary School
@@ -26,9 +26,12 @@ const Navbar = () => {
         <div onClick={handleNav} className="flex md:hidden">
           {nav ? <MdClose size={30} /> : <CiMenuBurger size={30} />}
         </div>
-        <ul className="hidden md:flex gap-4 justify-center items-center">
+        <ul className="hidden md:flex justify-center gap-1 items-center">
           {NavItems.map((item, index) => (
-            <li key={index} className="capitalize">
+            <li
+              key={index}
+              className="capitalize hover:bg-blue-600/60 py-2 px-4 rounded-md hover:transition-all hover:duration-500"
+            >
               <Link href={`#${item}`}>{item}</Link>
             </li>
           ))}
