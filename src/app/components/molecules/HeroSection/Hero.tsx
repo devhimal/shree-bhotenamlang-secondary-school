@@ -34,7 +34,7 @@ const Hero = () => {
           </span>{" "}
           a place where learning thrives.
         </motion.p>
-        <button className="px-4 py-2 backdrop-blur-sm text-xs md:text-md lg:text-xl bg-green-700  text-white mx-auto text-center rounded-full relative mt-4">
+        <button className="px-4 py-2 backdrop-blur-sm text-xs md:text-md lg:text-xl bg-green-700 hover:bg-orange-600 transition-all duration-300 hover:scale-95  text-white mx-auto text-center rounded-full relative mt-4">
           <span className="uppercase">Sponsor a child</span>
         </button>
       </motion.div>
