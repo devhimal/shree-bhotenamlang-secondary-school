@@ -6,7 +6,7 @@ import FeatureProgram from "./components/molecules/FeatureProgram/FeatureProgram
 
 export default function Home() {
   return (
-    <main className="flex relative flex-col items-center h-fit gap-10">
+    <main className="flex relative flex-col items-center gap-10">
       <Navbar />
       <Hero />
       <Numbers />
