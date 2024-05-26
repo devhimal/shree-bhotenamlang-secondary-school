@@ -41,7 +41,7 @@ export function Testimonials() {
 
   return (
     <div className="mb-14 bg-green-50 w-full">
-      <Container classNames="text-black">
+      <Container classNames="text-black text-center py-4">
         <div className="mb-8">
           <LazyShow>
             <SectionHeading>Testimonials</SectionHeading>
