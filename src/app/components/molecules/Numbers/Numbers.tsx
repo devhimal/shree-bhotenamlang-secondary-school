@@ -31,10 +31,10 @@ const Numbers = () => {
                 key={index}
                 className=" h-[200px] flex flex-col gap-4 justify-center items-center "
               >
-                <div className="text-4xl font-extrabold text-blue-900">
+                <div className="text-4xl font-extrabold text-green-700">
                   {item.number}
                 </div>
-                <h1 className="text-xl font-bold uppercase">{item.title}</h1>
+                <h1 className="text-2xl font-bold ">{item.title}</h1>
               </div>
             )
           })}
