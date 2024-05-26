@@ -3,7 +3,6 @@ import LazyShow from "../LazyShow/LazyShow"
 import Container from "../../atoms/Container/Container"
 import SectionHeading from "../../atoms/SectionHeading/SectionHeading"
 import Image from "next/image"
-import { LuHelpingHand } from "react-icons/lu"
 import Button from "../../atoms/Buttons/Button"
 
 const Story = () => {
