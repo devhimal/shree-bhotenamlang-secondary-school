@@ -46,25 +46,29 @@ const Events = () => {
   ]
 
   return (
-    <LazyShow>
-      <Container classNames="text-black overflow-hidden ">
-        <div className="">
+    <Container classNames="text-black overflow-hidden ">
+      <div className="">
+        <LazyShow>
           <SectionHeading>Upcoming Events</SectionHeading>
+        </LazyShow>
+        <LazyShow>
           <BentoGrid className="w-full mx-auto">
-            {items.map((item, i) => (
-              <BentoGridItem
-                key={i}
-                title={item.title}
-                description={item.description}
-                imgUrl={item.imgUrl}
-                icon={item.icon}
-                className={i === 0 || i === 5 ? "md:col-span-2" : ""}
-              />
-            ))}
+            {items.map((item, i) => {
+              return (
+                <BentoGridItem
+                  key={i}
+                  title={item.title}
+                  description={item.description}
+                  imgUrl={item.imgUrl}
+                  icon={item.icon}
+                  className={i === 0 || i === 5 ? "md:col-span-2" : ""}
+                />
+              )
+            })}
           </BentoGrid>
-        </div>
-      </Container>
-    </LazyShow>
+        </LazyShow>
+      </div>
+    </Container>
   )
 }
 

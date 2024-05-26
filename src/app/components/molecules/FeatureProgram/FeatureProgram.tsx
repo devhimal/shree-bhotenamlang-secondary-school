@@ -45,14 +45,14 @@ const FeatureProgram = () => {
     },
   ]
   return (
-    <LazyShow>  
-      <Container classNames="text-black">
-        <div>
-          <SectionHeading>Featured Program</SectionHeading>
+    <Container classNames="text-black">
+      <div>
+        <SectionHeading>Featured Program</SectionHeading>
 
-          <div className="h-fit ml-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-10 ">
-            {Program.map((item, index) => {
-              return (
+        <div className="h-fit ml-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-10 ">
+          {Program.map((item, index) => {
+            return (
+              <LazyShow key={index}>
                 <PinContainer
                   title={item.title ? item.title : "bhotenamlang"}
                   href={item.url ? item.url : "bhotenamlangschool.com"}
@@ -75,12 +75,12 @@ const FeatureProgram = () => {
                     />
                   </div>
                 </PinContainer>
-              )
-            })}
-          </div>
+              </LazyShow>
+            )
+          })}
         </div>
-      </Container>
-    </LazyShow>
+      </div>
+    </Container>
   )
 }
 
