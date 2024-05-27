@@ -9,7 +9,6 @@ import { Testimonials } from "./components/molecules/Testimonials/Testimonials"
 export default function Home() {
   return (
     <main className="flex relative flex-col items-center gap-10">
-      <Navbar />
       <Hero />
       <Numbers />
       <Story />
