@@ -55,7 +55,7 @@ const Events = () => {
   ]
 
   return (
-    <Container classNames="text-blac">
+    <Container classNames="text-black">
       <div>
         <SectionHeading>Upcoming Events</SectionHeading>
         <BentoGrid className="w-full mx-auto">
