@@ -32,7 +32,7 @@ const Navbar = () => {
               key={index}
               className="capitalize hover:bg-green-700 py-2 px-4 rounded-md hover:transition-all hover:duration-500"
             >
-              <Link href={`#${item}`}>{item}</Link>
+              <Link href={index === 4 ? "team" : `#${item}`}>{item}</Link>
             </li>
           ))}
         </ul>
@@ -47,7 +47,10 @@ const Navbar = () => {
         >
           {NavItems.map((item, index) => (
             <li key={index} className="capitalize">
-              <Link href={`#${item}`} onClick={handleNav}>
+              <Link
+                href={index === 4 ? "team" : `#${item}`}
+                onClick={handleNav}
+              >
                 {item}
               </Link>
             </li>
