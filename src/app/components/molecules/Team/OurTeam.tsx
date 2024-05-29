@@ -7,6 +7,48 @@ import SectionHeading from "../../atoms/SectionHeading/SectionHeading"
 import TeamProfile from "./TeamProfile"
 
 const OurTeam = () => {
+  const OurTeamData = [
+    {
+      name: "Gopi Krishna Parajuli",
+      faculty: ["Nepali"],
+      degree: "bachlor",
+      imgUrl: "/images/teams/members.jpg",
+      positin: "principal",
+      contact: "",
+    },
+    {
+      name: "surendra shrestha",
+      faculty: ["social", "population", "education"],
+      degree: "bachlor",
+      imgUrl: "/images/teams/members.jpg",
+      positin: "teacher",
+      contact: "",
+    },
+    {
+      name: "Amrita Lama",
+      faculty: ["English"],
+      degree: "bachlor",
+      imgUrl: "/images/teams/members.jpg",
+      positin: "teacher",
+    },
+
+    {
+      name: "Sunil shrestha",
+      faculty: ["social", "population", "education"],
+      degree: "bachlor",
+      contact: "",
+      imgUrl: "/images/teams/members.jpg",
+      positin: "teacher",
+    },
+    {
+      name: "Aashish Tamang",
+      faculty: ["social", "population", "education"],
+      degree: "bachlor",
+      imgUrl: "/images/teams/members.jpg",
+      contact: "",
+      positin: "teacher",
+    },
+  ]
   return (
     <div>
       <div>
@@ -36,14 +78,47 @@ const OurTeam = () => {
       </div>
       <Container>
         <div>
-          <SectionHeading classNames="text-black">
-            Our team members
-          </SectionHeading>
-          <div className="ml-4 gap-4 grid grid-cols-4 mb-12">
-            <TeamProfile imgUrl="" name="" degree="" faculty="" />
-            <TeamProfile imgUrl="" name="" degree="" faculty="" />
-            <TeamProfile imgUrl="" name="" degree="" faculty="" />
-            <TeamProfile imgUrl="" name="" degree="" faculty="" />
+          {/* school team members */}
+          <div>
+            <SectionHeading classNames="text-black py-8">
+              Our team members
+            </SectionHeading>
+            <div className=" ml-0 sm:ml-4 gap-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  lg:grid-cols-4 mb-12">
+              {OurTeamData.map((member, i) => {
+                return (
+                  <TeamProfile
+                    key={i}
+                    imgUrl={member.imgUrl}
+                    name={member.name}
+                    degree={member.degree}
+                    faculty={member.faculty}
+                    contact={member.contact}
+                    position={member.positin}
+                  />
+                )
+              })}
+            </div>
+          </div>
+          {/* school developmenet commettee */}
+          <div>
+            <SectionHeading classNames="text-black py-8">
+              School Development Committee
+            </SectionHeading>
+            <div className=" ml-0 sm:ml-4 gap-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  lg:grid-cols-4 mb-12">
+              {OurTeamData.map((member, i) => {
+                return (
+                  <TeamProfile
+                    key={i}
+                    imgUrl={member.imgUrl}
+                    name={member.name}
+                    degree={member.degree}
+                    faculty={member.faculty}
+                    contact={""}
+                    position={member.positin}
+                  />
+                )
+              })}
+            </div>
           </div>
         </div>
       </Container>
