@@ -80,42 +80,48 @@ const OurTeam = () => {
         <div>
           {/* school team members */}
           <div>
-            <SectionHeading classNames="text-black py-8">
-              Our team members
-            </SectionHeading>
+            <LazyShow>
+              <SectionHeading classNames="text-black py-8">
+                Our team members
+              </SectionHeading>
+            </LazyShow>
             <div className=" ml-0 sm:ml-4 gap-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  lg:grid-cols-4 mb-12">
               {OurTeamData.map((member, i) => {
                 return (
-                  <TeamProfile
-                    key={i}
-                    imgUrl={member.imgUrl}
-                    name={member.name}
-                    degree={member.degree}
-                    faculty={member.faculty}
-                    contact={member.contact}
-                    position={member.positin}
-                  />
+                  <LazyShow key={i}>
+                    <TeamProfile
+                      imgUrl={member.imgUrl}
+                      name={member.name}
+                      degree={member.degree}
+                      faculty={member.faculty}
+                      contact={""}
+                      position={member.positin}
+                    />
+                  </LazyShow>
                 )
               })}
             </div>
           </div>
           {/* school developmenet commettee */}
           <div>
-            <SectionHeading classNames="text-black py-8">
-              School Development Committee
-            </SectionHeading>
+            <LazyShow>
+              <SectionHeading classNames="text-black py-8">
+                School Development Committee
+              </SectionHeading>
+            </LazyShow>
             <div className=" ml-0 sm:ml-4 gap-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  lg:grid-cols-4 mb-12">
               {OurTeamData.map((member, i) => {
                 return (
-                  <TeamProfile
-                    key={i}
-                    imgUrl={member.imgUrl}
-                    name={member.name}
-                    degree={member.degree}
-                    faculty={member.faculty}
-                    contact={""}
-                    position={member.positin}
-                  />
+                  <LazyShow key={i}>
+                    <TeamProfile
+                      imgUrl={member.imgUrl}
+                      name={member.name}
+                      degree={member.degree}
+                      faculty={member.faculty}
+                      contact={""}
+                      position={member.positin}
+                    />
+                  </LazyShow>
                 )
               })}
             </div>
