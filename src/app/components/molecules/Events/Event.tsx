@@ -46,7 +46,7 @@ const Events = () => {
   ]
 
   return (
-    <Container classNames="text-black overflow-hidden ">
+    <Container classNames="text-blackk overflow-hidden ">
       <div className="">
         <LazyShow>
           <SectionHeading>Upcoming Events</SectionHeading>
