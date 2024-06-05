@@ -42,6 +42,7 @@ const Sports = () => {
 
   return (
     <div>
+      {/* Hero section */}
       <HeroContainer>
         <Image
           src={image1}
@@ -63,13 +64,13 @@ const Sports = () => {
       </div>
 
       <Container>
-        <div>
+        <div className="text-black">
           <LazyShow>
             <SectionHeading classNames="text-black py-8">
               <p>Sports at Shree Bhotenamlang Secondary School</p>
             </SectionHeading>
             <p className="text-black">
-              Welcome to the Sports Section of [School Name]! Our school,
+              Welcome to the Sports Section of Shree Bhotenamlang Secondary School! Our school,
               located in the beautiful country of Nepal, is dedicated to
               fostering the holistic development of our students, where sports
               play an integral role. We believe that engaging in physical
@@ -147,7 +148,8 @@ const Sports = () => {
               </div>
             </div>
           </div>
-
+          </LazyShow>
+          <LazyShow>
             {/* Achievements section */}
             <div>
               <SectionHeading classNames="text-black py-8">
@@ -161,7 +163,7 @@ const Sports = () => {
               <div className="ml-0 sm:ml-4 gap-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mb-12 text-black">
                 {trophyData.map((trophy, i) => (
                   <div
-                    className="bg-green-500 p-2 text-center rounded-lg mt-5"
+                    className="bg-green-500 p-2 text-center rounded-lg mt-5 hover:scale-95 transition-all duration-300 "
                     key={i}
                   >
                     <LazyShow key={i}>
@@ -212,6 +214,56 @@ const Sports = () => {
                   </div>
                 ))}
               </div>
+            </div>
+
+            <div>
+              <SectionHeading classNames="text-black py-8">
+                <p>Encouraging Participation</p>
+              </SectionHeading>
+              <p>We encourage all students to take part in our sports events, whether as participants or enthusiastic supporters. Participation in sports helps students develop discipline, teamwork, and leadership skills, which are essential for their overall growth.</p>
+            </div>
+
+            <div>
+              <SectionHeading classNames="text-black py-8">
+                <p>Donate Sports Materials</p>
+              </SectionHeading>
+              <p>Help Us Empower Young Athletes at SBSS.</p>
+              <p>At SBSS, we believe in the power of sports to transform lives. Participation in sports fosters teamwork, discipline, and a healthy lifestyle. However, many of our students lack access to the essential sports equipment needed to fully engage in these activities. Your generous donation of sports materials can make a significant difference.</p>
+            </div>
+
+            <div>
+              <SectionHeading classNames="text-black py-8">
+                <p>How Your Donation Helps</p>
+              </SectionHeading>
+              <div>
+                <Container>
+                  <ul className="text-black mt-3">
+                    <p>
+                      - Enhances Physical Education: Provides students with the tools they need for effective physical education classes.
+                    </p>
+                    <p>
+                      - Supports Extracurricular Activities: Enables our sports teams to practice and compete at their best.
+                    </p>
+                    <p>- Promotes Healthy Lifestyles: Encourages students to stay active and healthy, reducing the risk of lifestyle-related diseases.</p>
+                    <p>- Fosters Teamwork and Discipline: Helps students learn important life skills through team sports.</p>
+                  </ul>
+                </Container>
+              </div>
+            </div>
+
+            <div>
+              <SectionHeading classNames="text-black py-8">
+                <p>How Your Donation Helps</p>
+              </SectionHeading>
+              <p>1. Contact Us: Reach out to our Sports Coordinator to discuss your donation.
+              </p>
+              <Container>
+                  <ul className="text-black mt-3">
+                    <p>- Name: Sonam Tamang</p>
+                    <p>   - Email: abc@gmail.com</p>
+                    <p>- Phone: 980000000</p>
+                  </ul>
+                </Container>
             </div>
           </LazyShow>
         </div>
