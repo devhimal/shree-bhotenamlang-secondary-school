@@ -45,31 +45,47 @@ const Events = () => {
     },
   ]
 
-  return (
-    <Container classNames="text-blackk overflow-hidden ">
-      <div className="">
-        <LazyShow>
-          <SectionHeading>Upcoming Events</SectionHeading>
-        </LazyShow>
-        <LazyShow>
-          <BentoGrid className="w-full mx-auto">
-            {items.map((item, i) => {
-              return (
-                <BentoGridItem
-                  key={i}
-                  title={item.title}
-                  description={item.description}
-                  imgUrl={item.imgUrl}
-                  icon={item.icon}
-                  className={i === 0 || i === 5 ? "md:col-span-2" : ""}
-                />
-              )
-            })}
-          </BentoGrid>
-        </LazyShow>
+return (
+  <Container classNames="text-black overflow-hidden ">
+    <div className="">
+      <LazyShow>
+        <SectionHeading>Upcoming Events</SectionHeading>
+      </LazyShow>
+      <LazyShow>
+        <BentoGrid className="w-full mx-auto">
+          {items.map((item, i) => {
+            return (
+              <BentoGridItem
+                key={i}
+                title={item.title}
+                description={item.description}
+                imgUrl={item.imgUrl}
+                icon={item.icon}
+                className={i === 0 || i === 5 ? "md:col-span-2" : ""}
+              />
+            )
+          })}
+        </BentoGrid>
+      </LazyShow>
+    </div>
+    <Container classNames="text-black">
+      <div>
+        <SectionHeading>Upcoming Events</SectionHeading>
+        <BentoGrid className="w-full mx-auto">
+          {items.map((item, i) => (
+            <BentoGridItem
+              key={i}
+              title={item.title}
+              description={item.description}
+              icon={item.icon}
+              className={i === 3 || i === 6 ? "md:col-span-2" : ""}
+            />
+          ))}
+        </BentoGrid>
       </div>
     </Container>
-  )
+  </Container>
+)
 }
 
 export default Events
