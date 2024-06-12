@@ -34,7 +34,7 @@ const Navbar = () => {
                   : "font-extrabold  w-[50%] tracking-wide text-xl"
               }
             >
-              Shree Bhotenamlang
+              Shree Bhotenamlang S.S
             </h1>
           </div>
           <div
