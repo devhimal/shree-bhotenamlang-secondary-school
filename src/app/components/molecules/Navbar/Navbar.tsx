@@ -1,4 +1,3 @@
-
 "use client"
 
 import React, { useState } from "react"
@@ -35,7 +34,7 @@ const Navbar = () => {
                   : "font-extrabold  w-[50%] tracking-wide text-xl"
               }
             >
-              Shree Bhotenamlang Secondary School
+              Shree Bhotenamlang
             </h1>
           </div>
           <div
