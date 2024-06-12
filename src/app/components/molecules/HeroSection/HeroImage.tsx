@@ -20,7 +20,7 @@ const HeroImage = ({ headline }: Props) => {
           className="w-full h-full object-cover"
         />
       </HeroContainer>
-      <div className="absolute top-[40%]">
+      <div className="absolute top-[-40%]">
         <LazyShow>
           <Container classNames="text-start">
             <p className="text-sm sm:text-lg md:text-2xl w-full md:w-[60%]">

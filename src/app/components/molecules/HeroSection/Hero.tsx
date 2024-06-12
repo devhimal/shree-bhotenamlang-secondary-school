@@ -6,10 +6,21 @@ import Container from "../../atoms/Container/Container"
 
 const Hero = () => {
   const images = [
-    "/images/school1.jpg",
-    "/images/school2.jpg",
-    "/images/school3.jpg",
-    "/images/school4.jpg",
+    "/school/school1.jpeg",
+    "/school/school2.jpeg",
+    "/school/school3.jpeg",
+    "/school/school4.jpeg",
+    "/school/school5.jpeg",
+    "/school/school6.jpeg",
+    "/school/school7.jpeg",
+    "/school/school8.jpeg",
+    "/school/school9.jpeg",
+    "/school/school10.jpeg",
+    "/school/school11.jpeg",
+    "/school/school12.jpeg",
+    "/school/school13.jpeg",
+    "/school/school14.jpeg",
+    "/school/school15.jpeg",
   ]
   return (
     <ImagesSlider className="h-[100vh]" images={images}>
