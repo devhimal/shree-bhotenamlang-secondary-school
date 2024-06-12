@@ -36,11 +36,11 @@ const Hero = () => {
         transition={{
           duration: 0.6,
         }}
-        className="z-50 px-8 md:px-32 flex flex-col justify-center items-center"
+        className="z-50 w-full md:px-32 flex flex-col justify-center items-center"
       >
         <Container classNames="text-center px-14">
           <div>
-            <motion.p className="font-bold text-xl md:text-3xl lg:text-4xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 py-4">
+            <motion.p className="font-bold text-mg md:text-3xl lg:text-4xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 py-4">
               Explore our programs, meet our community, and discover what makes
               <span className="text-orange-600">
                 {" "}
