@@ -44,12 +44,14 @@ const Navbar = () => {
             {nav ? <MdClose size={30} /> : <CiMenuBurger size={30} />}
           </div>
           <ul className="hidden md:flex justify-center gap-1 items-center">
-            {NavItems.map((item, index) => (
+            {NavItems.map((item: any, index: number) => (
               <li
                 key={index}
                 className="capitalize hover:bg-green-700 py-2 px-4 rounded-md hover:transition-all hover:duration-500"
               >
-                <Link href={index === 4 ? "team" : `#${item}`}>{item}</Link>
+                <Link href={index === 3 ? `#${item.link}` : `${item.link}`}>
+                  {item.label}
+                </Link>
               </li>
             ))}
           </ul>
@@ -65,10 +67,10 @@ const Navbar = () => {
             {NavItems.map((item, index) => (
               <li key={index} className="capitalize">
                 <Link
-                  href={index === 1 ? "sports" : `#${item}`}
+                  href={index === 3 ? `#${item.link}` : `${item.link}`}
                   onClick={handleNav}
                 >
-                  {item}
+                  {item.label}
                 </Link>
               </li>
             ))}
