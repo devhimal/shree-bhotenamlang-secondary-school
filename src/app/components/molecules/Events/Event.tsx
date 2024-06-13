@@ -68,22 +68,7 @@ const Events = () => {
           </BentoGrid>
         </LazyShow>
       </div>
-      <Container classNames="text-black">
-        <div>
-          <SectionHeading>Upcoming Events</SectionHeading>
-          <BentoGrid className="w-full mx-auto">
-            {items.map((item, i) => (
-              <BentoGridItem
-                key={i}
-                title={item.title}
-                description={item.description}
-                icon={item.icon}
-                className={i === 3 || i === 6 ? "md:col-span-2" : ""}
-              />
-            ))}
-          </BentoGrid>
-        </div>
-      </Container>
+     
     </Container>
   )
 }
