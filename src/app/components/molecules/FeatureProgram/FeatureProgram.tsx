@@ -49,7 +49,7 @@ const FeatureProgram = () => {
       <div>
         <SectionHeading>Featured Program</SectionHeading>
 
-        <div className="h-fit ml-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-10 ">
+        <div className="h-fit ml-6  grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-10 ">
           {Program.map((item, index) => {
             return (
               <LazyShow key={index}>
