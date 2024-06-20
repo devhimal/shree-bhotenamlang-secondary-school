@@ -36,7 +36,7 @@ const Navbar = () => {
     <div
       className={`fixed z-50 overflow-hidden w-full ${
         scroll ? "bg-[#48823E]" : "bg-transparent"
-      } py-8 text-xl flex text-white w-full capitalize transition-all duration-500`}
+      } py-4 text-xl flex text-white w-full capitalize transition-all duration-500`}
     >
       <Container>
         <nav className="flex justify-between w-full">
@@ -55,7 +55,7 @@ const Navbar = () => {
             {NavItems.map((item, index) => (
               <li
                 key={index}
-                className="capitalize hover:[#48823E] py-2 px-4 rounded-md hover:transition-all hover:duration-500"
+                className="capitalize hover:text-black py-2 px-4 rounded-md hover:transition-all hover:duration-500"
               >
                 <Link href={index === 3 ? `#${item.link}` : `${item.link}`}>
                   {item.label}
