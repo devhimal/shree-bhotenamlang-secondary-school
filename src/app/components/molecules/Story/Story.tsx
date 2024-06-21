@@ -12,7 +12,7 @@ const Story = () => {
         <LazyShow>
           <div className="mb-8">
             <SectionHeading classNames=" text-center">
-              Story of our students
+              Seeking Support
             </SectionHeading>
             <p className="text-center">
               Your kindness and support can help create a brighter future for
