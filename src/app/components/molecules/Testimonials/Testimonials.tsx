@@ -10,9 +10,9 @@ export function Testimonials() {
   const testimonials = [
     {
       quote:
-        "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair.",
-      name: "Charles Dickens",
-      title: "A Tale of Two Cities",
+        "I am grateful for the opportunities, lessons, support, and memories from the school. Despite past challenges like flooding and inadequate facilities, the school taught us valuable life lessons. With significant improvements now, I thank the TFN teachers and the Shree Bhotenamlang School team for their dedication and contributions.",
+      name: "Himal Tamang",
+      title: "2074 /  2017",
     },
     {
       quote:
