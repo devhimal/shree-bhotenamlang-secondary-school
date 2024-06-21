@@ -49,7 +49,7 @@ const FeatureProgram = () => {
       <div>
         <SectionHeading>Featured Program</SectionHeading>
 
-        <div className="h-fit ml-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-10 ">
+        <div className="h-fit ml-6  pb-0 sm:pb-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-10 ">
           {Program.map((item, index) => {
             return (
               <LazyShow key={index}>
@@ -58,12 +58,12 @@ const FeatureProgram = () => {
                   href={item.url ? item.url : "bhotenamlangschool.com"}
                   key={index}
                 >
-                  <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2  h-full w-full ">
-                    <h3 className="max-w-xs !pb-2 !m-0 font-bold  text-base text-slate-100">
+                  <div className="flex basis-full flex-col p-4 tracking-tight text-black sm:basis-1/2  h-full w-full ">
+                    <h3 className="max-w-xs !pb-2 !m-0 font-bold  text-base ">
                       {item.title}
                     </h3>
                     <div className="text-base !m-0 !p-0 font-normal">
-                      <span className="text-white">{item.desc}</span>
+                      <span className="">{item.desc}</span>
                     </div>
 
                     <Image
