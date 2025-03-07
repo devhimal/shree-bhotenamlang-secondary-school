@@ -1,8 +1,8 @@
-"use client"
-import { motion } from "framer-motion"
-import React from "react"
-import { ImagesSlider } from "../../ui/ImageSlider"
-import Container from "../../atoms/Container/Container"
+"use client";
+import { motion } from "framer-motion";
+import React from "react";
+import { ImagesSlider } from "../../ui/ImageSlider";
+import Container from "../../atoms/Container/Container";
 
 const Hero = () => {
   const images = [
@@ -21,7 +21,7 @@ const Hero = () => {
     "/school/school13.jpeg",
     "/school/school14.jpeg",
     "/school/school15.jpeg",
-  ]
+  ];
   return (
     <ImagesSlider className="h-[100vh]" images={images}>
       <motion.div
@@ -34,7 +34,7 @@ const Hero = () => {
           y: 0,
         }}
         transition={{
-          duration: 0.6,
+          duration: 0.8,
         }}
         className="z-50 w-full md:px-32 flex flex-col justify-center items-center"
       >
@@ -55,6 +55,6 @@ const Hero = () => {
         </Container>
       </motion.div>
     </ImagesSlider>
-  )
-}
-export default Hero
+  );
+};
+export default Hero;
