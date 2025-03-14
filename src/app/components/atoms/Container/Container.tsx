@@ -13,7 +13,7 @@ const Container = ({ children, classNames, id }: Props) => {
       // style={{ paddingLeft: "10px", paddingRight: "10px" }}
       id={id}
       className={cn(
-        "mx-auto px-6 md:px-14 w-full max-w-[1440px] text-white ",
+        "mx-auto px-6 md:px-14 w-full h-fit max-w-[1440px] text-white ",
         classNames,
       )}
     >
