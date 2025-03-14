@@ -35,7 +35,7 @@ const Events = () => {
       title: "Environment Day",
       description:
         "Environment Day at [Your School Name] is dedicated to raising awareness about the importance of environmental conservation. Through activities like tree planting, clean-up drives, and eco-friendly workshops, students engage in efforts to promote sustainability and make a positive impact on the planet.",
-      imgUrl: "/images/school1.jpg",
+      imgUrl: "/images/events/students2.jpg",
       icon: "2024-02-4",
     },
   ];

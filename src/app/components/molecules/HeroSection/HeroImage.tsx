@@ -1,11 +1,11 @@
-import React from "react"
-import HeroContainer from "../../atoms/HeroContainer/HeroContainer"
-import Image from "next/image"
-import LazyShow from "../LazyShow/LazyShow"
-import Container from "../../atoms/Container/Container"
+import React from "react";
+import HeroContainer from "../../atoms/HeroContainer/HeroContainer";
+import Image from "next/image";
+import LazyShow from "../LazyShow/LazyShow";
+import Container from "../../atoms/Container/Container";
 
 interface Props {
-  headline: string
+  headline: string;
 }
 
 const HeroImage = ({ headline }: Props) => {
@@ -13,7 +13,7 @@ const HeroImage = ({ headline }: Props) => {
     <div>
       <HeroContainer>
         <Image
-          src={"/images/teams/members.jpg"}
+          src={"/images/events/schoolbig.jpg"}
           width={1024}
           height={1024}
           alt="team members image"
@@ -30,7 +30,7 @@ const HeroImage = ({ headline }: Props) => {
         </LazyShow>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default HeroImage
+export default HeroImage;
