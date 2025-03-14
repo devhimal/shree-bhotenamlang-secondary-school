@@ -1,8 +1,8 @@
-"use client"
-import { motion } from "framer-motion"
-import React from "react"
-import { ImagesSlider } from "../../ui/ImageSlider"
-import Container from "../../atoms/Container/Container"
+"use client";
+import { motion } from "framer-motion";
+import React from "react";
+import { ImagesSlider } from "../../ui/ImageSlider";
+import Container from "../../atoms/Container/Container";
 
 const Hero = () => {
   const images = [
@@ -21,7 +21,7 @@ const Hero = () => {
     "/school/school13.jpeg",
     "/school/school14.jpeg",
     "/school/school15.jpeg",
-  ]
+  ];
   return (
     <ImagesSlider className="h-[100vh]" images={images}>
       <motion.div
@@ -34,13 +34,18 @@ const Hero = () => {
           y: 0,
         }}
         transition={{
-          duration: 0.6,
+          duration: 0.8,
         }}
         className="z-50 w-full md:px-32 flex flex-col justify-center items-center"
       >
         <Container classNames="text-center px-14">
           <div>
-            <motion.p className="font-bold text-mg md:text-3xl lg:text-4xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 py-4">
+            <motion.p className="font-bold text-md md:text-xl lg:text-4xl text-center bg-clip-text  ">
+              <span className="">
+                &quot; Established in the year 2017 BS. &quot;
+              </span>
+            </motion.p>
+            <motion.p className="font-bold text-md md:text-3xl lg:text-4xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 py-4">
               Explore our programs, meet our community, and discover what makes
               <span className="text-orange-600">
                 {" "}
@@ -55,6 +60,6 @@ const Hero = () => {
         </Container>
       </motion.div>
     </ImagesSlider>
-  )
-}
-export default Hero
+  );
+};
+export default Hero;

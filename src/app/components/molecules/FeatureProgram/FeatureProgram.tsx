@@ -1,87 +1,81 @@
-import React from "react"
-import Container from "../../atoms/Container/Container"
-import SectionHeading from "../../atoms/SectionHeading/SectionHeading"
-import { PinContainer } from "../../ui/PinContainer"
-import Image from "next/image"
-import LazyShow from "../LazyShow/LazyShow"
+import React from "react";
+import Container from "../../atoms/Container/Container";
+import SectionHeading from "../../atoms/SectionHeading/SectionHeading";
+import { PinContainer } from "../../ui/PinContainer";
+import Image from "next/image";
+import LazyShow from "../LazyShow/LazyShow";
 
 const FeatureProgram = () => {
   const Program = [
     {
       title: "Computer Course",
-      desc: "The computer course is taught from class 4 to class 8.",
-      imgUrl: "/images/school1.jpg",
+      desc: "Learning programming, algorithms, and technology fundamentals.",
+      imgUrl: "/images/subjects/computer.jpeg",
       url: "/",
     },
     {
       title: "Optional Mathematics",
-      desc: "The computer course is taught from class 4 to class 8.",
-      imgUrl: "/images/school1.jpg",
+      desc: "Solving problems with numbers, logic, and analytical thinking.",
+      imgUrl: "/images/subjects/math.jpeg",
       url: "",
     },
     {
       title: "Economics",
-      desc: "The computer course is taught from class 4 to class 8.",
-      imgUrl: "/images/school1.jpg",
+      desc: "Studying how resources are produced, distributed, and consumed.",
+      imgUrl: "/images/subjects/economics.jpeg",
       url: "",
     },
     {
       title: "Science",
-      desc: "The computer course is taught from class 4 to class 8.",
-      imgUrl: "/images/school1.jpg",
+      desc: "Exploring the wonders of the natural world through experiments and observations.",
+      imgUrl: "/images/subjects/science.jpeg",
       url: "",
     },
     {
       title: "English",
-      desc: "The computer course is taught from class 4 to class 8.",
-      imgUrl: "/images/school1.jpg",
+      desc: "Enhancing communication skills through literature, grammar, and writing.",
+      imgUrl: "/images/subjects/english.jpeg",
       url: "",
     },
     {
       title: "Social",
-      desc: "The computer course is taught from class 4 to class 8.",
-      imgUrl: "/images/school1.jpg",
+      desc: "Understanding history, culture, and society’s impact on the world.",
+      imgUrl: "/images/subjects/social.jpeg",
       url: "",
     },
-  ]
+  ];
   return (
-    <Container classNames="text-black">
-      <div>
+    <Container classNames="text-black relative ">
+      <div className="">
         <SectionHeading>Featured Program</SectionHeading>
 
-        <div className="h-fit ml-6  pb-0 sm:pb-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-10 ">
+        <div className="h-full ml-0 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  gap-4  ">
           {Program.map((item, index) => {
             return (
-              <LazyShow key={index}>
-                <PinContainer
-                  title={item.title ? item.title : "bhotenamlang"}
-                  href={item.url ? item.url : "bhotenamlangschool.com"}
-                  key={index}
-                >
-                  <div className="flex basis-full flex-col p-4 tracking-tight text-black sm:basis-1/2  h-full w-full ">
-                    <h3 className="max-w-xs !pb-2 !m-0 font-bold  text-base ">
-                      {item.title}
-                    </h3>
-                    <div className="text-base !m-0 !p-0 font-normal">
-                      <span className="">{item.desc}</span>
-                    </div>
-
-                    <Image
-                      src={item.imgUrl}
-                      width={200}
-                      height={200}
-                      alt="image"
-                      className="w-full h-full object-cover mt-4 rounded-lg"
-                    />
-                  </div>
-                </PinContainer>
-              </LazyShow>
-            )
+              <div
+                key={index}
+                className="border hover:cursor-pointer border-grey-200 rounded-md px-2 py-2 flex flex-col justify-between"
+              >
+                <div>
+                  <h3 className="font-bold">{item.title}</h3>
+                  <p className="text-[14px] py-2 ">{item.desc}</p>
+                </div>
+                <div className="h-[250px] w-full ">
+                  <Image
+                    src={item.imgUrl}
+                    alt={item.title}
+                    width={200}
+                    height={200}
+                    className="h-full w-full object-cover object-center"
+                  />
+                </div>
+              </div>
+            );
           })}
         </div>
       </div>
     </Container>
-  )
-}
+  );
+};
 
-export default FeatureProgram
+export default FeatureProgram;

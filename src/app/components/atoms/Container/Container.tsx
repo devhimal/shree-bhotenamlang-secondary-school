@@ -1,10 +1,10 @@
-import React, { ReactNode } from "react"
-import { cn } from "../../utils/cn"
+import React, { ReactNode } from "react";
+import { cn } from "../../utils/cn";
 
 interface Props {
-  children: ReactNode
-  classNames?: string
-  id?: string
+  children: ReactNode;
+  classNames?: string;
+  id?: string;
 }
 
 const Container = ({ children, classNames, id }: Props) => {
@@ -13,13 +13,13 @@ const Container = ({ children, classNames, id }: Props) => {
       // style={{ paddingLeft: "10px", paddingRight: "10px" }}
       id={id}
       className={cn(
-        "mx-auto px-8 md:px-14 w-full max-w-[1440px] text-white overflow-hidden ",
-        classNames
+        "mx-auto px-6 md:px-14 w-full h-fit max-w-[1440px] text-white ",
+        classNames,
       )}
     >
       {children}
     </div>
-  )
-}
+  );
+};
 
-export default Container
+export default Container;

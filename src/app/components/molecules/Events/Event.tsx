@@ -1,14 +1,8 @@
-import React, { ReactNode } from "react"
-import { BentoGrid, BentoGridItem } from "../../ui/BentroGrid"
-import Container from "../../atoms/Container/Container"
-import SectionHeading from "../../atoms/SectionHeading/SectionHeading"
-import LazyShow from "../LazyShow/LazyShow"
-
-const Skeleton = ({ children }: { children?: ReactNode }) => (
-  <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 dark:from-neutral-900 dark:to-neutral-800 to-neutral-100">
-    {children}
-  </div>
-)
+import React, { ReactNode } from "react";
+import { BentoGrid, BentoGridItem } from "../../ui/BentroGrid";
+import Container from "../../atoms/Container/Container";
+import SectionHeading from "../../atoms/SectionHeading/SectionHeading";
+import LazyShow from "../LazyShow/LazyShow";
 
 const Events = () => {
   const items = [
@@ -38,18 +32,19 @@ const Events = () => {
       icon: "2024-02-4",
     },
     {
-      title: "The Pursuit of Knowledge",
-      description: "Join the quest for understanding and enlightenment.",
-      imgUrl: "/images/school1.jpg",
+      title: "Environment Day",
+      description:
+        "Environment Day at [Your School Name] is dedicated to raising awareness about the importance of environmental conservation. Through activities like tree planting, clean-up drives, and eco-friendly workshops, students engage in efforts to promote sustainability and make a positive impact on the planet.",
+      imgUrl: "/images/events/students2.jpg",
       icon: "2024-02-4",
     },
-  ]
+  ];
 
   return (
     <Container classNames="text-black overflow-hidden " id="events">
       <div className="">
         <LazyShow>
-          <SectionHeading>Upcoming Events</SectionHeading>
+          <SectionHeading>Past Events</SectionHeading>
         </LazyShow>
         <LazyShow>
           <BentoGrid className="w-full mx-auto">
@@ -63,14 +58,13 @@ const Events = () => {
                   icon={item.icon}
                   className={i === 0 || i === 5 ? "md:col-span-2" : ""}
                 />
-              )
+              );
             })}
           </BentoGrid>
         </LazyShow>
       </div>
-     
     </Container>
-  )
-}
+  );
+};
 
-export default Events
+export default Events;
